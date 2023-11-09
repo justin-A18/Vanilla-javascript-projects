@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 14px;
+  color: hsl(0, 0%, 100%);
+  background: url("/images/bg-stars.svg"), hsl(235, 16%, 14%);
+  background-size: 1000px;
+}
+
+.container {
+  min-height: 100%;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 10px 250px;
+}
+
+.title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  text-align: center;
+}
+
+.counter {
+  display: grid;
+  grid-template: auto/repeat(4, auto);
+  width: 100%;
+  padding: 46px 0;
+  justify-content: center;
+}
+
+.countdown__timer {
+  margin: 10px 8px;
+}
+.countdown__timer--title {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.45rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  opacity: 0.75;
+  text-transform: uppercase;
+}
+
+.container__card {
+  width: 70px;
+  height: 66px;
+  position: relative;
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 0;
+  perspective: 225px;
+}
+.container__card::before, .container__card::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 3px);
+  z-index: 2;
+  background-color: hsl(235, 16%, 14%);
+}
+.container__card::before {
+  left: -3px;
+}
+.container__card::after {
+  right: -3px;
+}
+
+.base {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.base::before, .base::after {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  justify-content: center;
+  z-index: 0;
+  overflow: hidden;
+  color: hsl(345, 95%, 68%);
+  background-color: hsl(236, 21%, 26%);
+}
+.base::before {
+  content: attr(data-before);
+  border-radius: 0 0 5px 5px;
+  bottom: 0;
+  align-items: flex-start;
+  box-shadow: 0px 5px 0px 0px hsl(234, 17%, 12%);
+}
+.base::after {
+  content: attr(data-after);
+  border-bottom: 1px solid hsl(235, 16%, 14%);
+  border-radius: 5px 5px 0 0;
+  top: 0;
+  align-items: flex-end;
+  filter: brightness(85%);
+}
+
+.card {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  z-index: 1;
+  transform: rotateX(0);
+  transform-origin: bottom;
+  transform-style: preserve-3d;
+}
+.card__face {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  justify-content: center;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+.card__front, .card__back {
+  color: hsl(345, 95%, 68%);
+  background-color: hsl(236, 21%, 26%);
+}
+.card__front {
+  border-radius: 5px 5px 0 0;
+  align-items: flex-end;
+  filter: brightness(85%);
+}
+.card__back {
+  border-top: 1px solid hsl(235, 16%, 14%);
+  border-radius: 0 0 5px 5px;
+  align-items: flex-start;
+  transform: rotateX(-180deg);
+}
+
+.footer {
+  display: flex;
+  height: 200px;
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  background: url("/images/pattern-hills.svg") no-repeat;
+  background-position: -625px;
+  background-size: 300% 100%;
+}
+.footer__container {
+  display: flex;
+  margin-top: 78px;
+}
+.footer__logo {
+  margin: 0 16px;
+  font-size: 1.65rem;
+  color: hsl(237, 18%, 59%);
+}
+.footer__logo:hover {
+  fill: hsl(345, 95%, 68%);
+}
+
+.flip {
+  animation: flip 0.85s forwards ease-in;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(-180deg);
+  }
+  60% {
+    transform: rotateX(-155deg);
+  }
+  70% {
+    transform: rotateX(-180deg);
+  }
+  80% {
+    transform: rotateX(-175deg);
+  }
+  100% {
+    transform: rotateX(-180deg);
+  }
+}
+@media only screen and (min-width: 770px) {
+  .main {
+    padding: 135px 10px 245px;
+  }
+  .title {
+    font-size: 22px;
+    letter-spacing: 0.45rem;
+  }
+  .counter {
+    padding: 93px 0;
+  }
+  .countdown__timer {
+    margin: 10px 15px;
+  }
+  .countdown__timer--title {
+    margin-top: 25px;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+  }
+  .container__card {
+    width: 150px;
+    height: 140px;
+    font-size: 5rem;
+  }
+  .container__card::before, .container__card::after {
+    width: 12px;
+    height: 12px;
+    top: calc(50% - 6px);
+  }
+  .container__card::before {
+    left: -6px;
+  }
+  .container__card::after {
+    right: -6px;
+  }
+  .base {
+    perspective: 400px;
+  }
+  .base::before {
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0px 10px 0px 0px hsl(234, 17%, 12%);
+  }
+  .base::after {
+    border-radius: 8px 8px 0 0;
+  }
+  .card__front {
+    border-radius: 8px 8px 0 0;
+  }
+  .card__back {
+    border-radius: 0 0 8px 8px;
+  }
+  .footer {
+    background-position: right;
+    background-size: 100% 100%;
+  }
+  .footer__container {
+    margin-top: 34px;
+  }
+  .footer__logo {
+    margin: 0 16px;
+  }
+}/*# sourceMappingURL=styles.css.map */

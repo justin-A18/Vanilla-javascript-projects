@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./src/dist/tailwind.css">
+</head>
+
+<body>
+  <main class="w-full h-[100vh] bg-blue-600">
+    <section class="flex flex-col items-center justify-center h-[100%] bg-black md:flex-row">
+      <form id="calc" class="flex flex-col gap-[1rem] bg-white w-[25rem] h-[20rem] p-[2rem]">
+        <input required class="border-b-[.1rem] outline-none border-gray-500" type="text" name="destino" 
+        placeholder="Destino"
+        id="destino">
+
+        <input required class="border-b-[.1rem] outline-none border-gray-500" type="text" name="presupuesto"
+        placeholder="Presupuesto"
+        id="presupuesto">
+
+        <input required class="border-b-[.1rem] outline-none border-gray-500" type="text" name="alojamiento"
+          placeholder="Alojamiento" id="alojamiento">
+
+        <input required class="border-b-[.1rem] outline-none border-gray-500" type="text" name="transporte"
+        placeholder="Transporte" 
+        id="transporte">
+
+        <input required class="border-b-[.1rem] outline-none border-gray-500" type="text" name="comida"
+        placeholder="Comida"
+        id="comida">
+
+        <button type="submit"
+          class="bg-blue-600 p-[.5rem] text-white rounded hover:bg-blue-950 transition-all duration-300 ease-in-out">
+          Calcular
+        </button>
+      </form>
+
+      <article class="bg-blue-950 w-[25rem] h-[10rem] md:h-[20rem] p-[2rem] flex items-center justify-center" id="results">
+        <img class="w-[7rem] md:w-[15rem]" src="https://cdn-icons-png.flaticon.com/512/6178/6178994.png" alt="sin resultados">
+      </article>
+    </section>
+  </main>
+  <script src="./src/js/main.js"></script>
+</body>
+
+</html>

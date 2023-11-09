@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito Compras</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./src/dist/tailwind.css">
+</head>
+<body class="bg-[#e1e1e1]">
+  <header class="w-[100%] h-[4rem] px-[2rem]">
+    <nav class="w-[100%] h-[100%] flex items-center justify-between">
+      <h2 class="text-[2rem]">FunkoHub</h2>
+      <div class="flex gap-[1.5rem] relative">
+        <i class='bx bxs-cart bx-md cursor-pointer' id="openCar"></i>
+        <i class='bx bxs-user-circle bx-md cursor-pointer'></i>
+        <div id="carritoModal" class="absolute hidden top-[3rem] bg-white w-[20rem] min-h-[7rem] right-[3.5rem] p-[1rem] flex-col items-center rounded-carrito-r shadow-lg gap-[1rem]">
+          <h2 class="text-[1.5rem] border-b">Carrito</h2>
+          <hr class="w-[100%] h-[.1rem] bg-black">
+          <ul id="carritoProductos" class="flex flex-col items-center justify-center w-[100%]">
+            <li><p>No hay productos en el carrito</p></li>
+          </ul>
+          <footer class="w-[100%] flex justify-end">
+            <p class="uppercase"><b>total:</b> <span id="total">$0</span></p>
+          </footer>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="w-[100%] h-[100vh]">
+    <section class="w-[100%] flex flex-col items-center gap-[1rem]">
+      <h1 class="text-[3rem]">Popular</h1>
+      <ul class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] grid-rows-[auto] gap-[1rem] w-[90%]" id="container-funkos"></ul>
+    </section>
+  </main>
+  <script src="./src/js/main.js"></script>
+</body>
+</html>

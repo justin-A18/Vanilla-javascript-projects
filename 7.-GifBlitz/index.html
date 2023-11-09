@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIFBLITZ</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+      />
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="container-principal">
+      <header class="navegation">
+        <div class="nav__logo">
+          <img class="logo__img" src="./icon.png" alt="giphy" />
+          <p class="logo__text">GifBlitz</p>
+        </div>
+
+        <form class="nav__search" action="#">
+          <div class="search__content">
+            <input
+              class="search__input"
+              type="text"
+              placeholder="Buscar GIF"
+              id="input-gif"
+            />
+            <button class="search__btn" id="search-gif">
+              <i class="bx bx-search bx-lg"></i>
+            </button>
+          </div>
+        </form>
+      </header>
+      <h1 class="category">¡Bienvenido!⭐</h1>
+      <section class="section-gif" id="gifContainer"></section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

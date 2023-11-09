@@ -1,0 +1,153 @@
+html{
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+body{
+    margin: 0;
+}
+
+.container-principal{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.navegation{
+    width: 100%;
+    height: 15rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+.nav__logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo__img{
+    width: 7rem;
+}
+
+.logo__text{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.nav__search{
+    width: 100%;
+}
+
+.search__content{
+    width: 100%;
+    height: 5rem;
+    position: relative;
+}
+
+.category{
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.search__btn{
+    position: absolute;
+    right: 0;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: .5rem;
+    animation: cambioColor 3s infinite;
+    transition: background-image .2s linear;
+}
+
+@keyframes cambioColor {
+    0%, 25%,50% {
+        background-image: linear-gradient(45deg, #93f 0%, #f66 100%);
+    }
+    50%,75%,100% {
+        background-image: linear-gradient(45deg, #f66 0%, #93f 100%);
+    }   
+}
+
+.search__btn .bx{
+    color: white;
+}
+
+.search__input{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+}
+
+.section-gif{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.container-img{
+    width: 25rem;
+    height: 25rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.container-img::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+}
+
+.container-img:hover::before{
+    opacity: 1;
+}
+
+
+@media (max-width: 970px) { 
+    .container-img{
+        width: 20rem;
+        height: 20rem;
+    }
+ }
+
+
+
+

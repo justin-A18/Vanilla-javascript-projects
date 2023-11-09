@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API CLIMA</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1 class="title">BUSCAR CLIMA</h1>
+    <section class="climate">
+      <article class="climate__results" id="resultado">
+        <span class="loader hidden"></span>
+        <p class="results__info">Agrega tu ciudad y país, el resultado se mostrará aquí</p>
+      </article>
+
+      <form id="formulario" class="climate__form" action="/">
+        <div class="form__city">
+          <input type="text" id="ciudad" name="ciudad" placeholder="Escribe tu ciudad" class="city">
+        </div>
+
+        <div class="form__list">
+          <select class="list__options" id="pais">
+            <option class="options__items" disabled selected value="">-- Seleccione --</option>
+            <option class="options__items" value="AR">Argentina</option>
+            <option class="options__items" value="CO">Colombia</option>
+            <option class="options__items" value="CR">Costa Rica</option>
+            <option class="options__items" value="ES">España</option>
+            <option class="options__items" value="US">Estados Unidos</option>
+            <option class="options__items" value="MX">México</option>
+            <option class="options__items" value="PE">Perú</option>
+          </select>
+        </div>
+        
+        <button class="form__submit" type="submit">Obtener Clima</button>
+      </form>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+
+</html>

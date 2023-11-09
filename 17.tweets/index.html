@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tweets</title>
+  <link rel="stylesheet" href="./src/dist/output.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="bg-fondo">
+  <main class="w-full min-h-[100vh] flex flex-col items-center gap-[1rem] p-[1rem]">
+    <h1 class="text-center text-[2rem]">CREA TUS TWEETS</h1>
+
+    <section class="flex flex-col items-center w-[100%] gap-[2rem]">
+
+      <article
+        class="flex flex-col items-center w-[90%] min-h-[10rem] p-[1rem] gap-[1rem] rounded-[.5rem] bg-card sm:w-[35rem]">
+
+        <header class="flex justify-between items-center w-[100%]">
+          <figure class="flex items-center gap-[1rem]">
+            <img class="w-[3rem] h-[3rem] rounded-[50%]" src="./src/img/waifu.jpg" alt="perfil">
+            <figcaption>
+              <h2 class="text-white"><strong>@user123</strong></h2>
+              <p class="text-blue-100 tracking-[.2rem] text-[.8rem]">Twitter</p>
+            </figcaption>
+          </figure>
+          <a href="#" class="text-white">
+            <i class='bx bxl-twitter bx-md'></i>
+          </a>
+        </header>
+
+        <form class="w-[100%] flex flex-col items-center gap-[1rem]" id="form">
+          <div class="w-[100%] flex flex-col items-center gap-[1rem]">
+            <textarea name="text" id="text" placeholder="¿Que estas pensando?"
+              class="resize-none w-[100%] h-[5rem] p-[1rem] outline-none rounded-[1rem]"></textarea>
+
+            <div class="relative w-[100%] h-[20rem] hidden" id="container_img">
+              <img class="w-[100%] h-[100%] object-cover" src="" alt="imageLoad" id="image">
+
+              <button type="button"
+                class="absolute top-[.5rem] right-[.5rem] text-white rounded-[50%] w-[2rem] h-[2rem] bg-black hover:bg-white hover:text-black"
+                id="delete">X</button>
+            </div>
+          </div>
+
+          <div class="flex justify-between w-[100%] px-[.2rem]">
+
+            <div class="relative">
+
+              <input class="w-[2rem] absolute opacity-0 cursor-pointer" type="file" id="file" accept="image/*">
+
+              <i class='bx bxs-camera-plus bx-md text-icons'></i>
+
+            </div>
+
+            <button type="submit"
+              class="bg-btn text-white px-[1.5rem] py-[.5rem] rounded-[1rem] hover:bg-icons hover:text-black transition-all duration-300 ease-in-out">Share</button>
+
+          </div>
+
+        </form>
+
+      </article>
+
+      <ul id="tweets" class="flex flex-wrap items-center justify-center gap-[1rem]"></ul>
+    </section>
+  </main>
+  <script src="./src/js/main.js"></script>
+</body>
+
+</html>

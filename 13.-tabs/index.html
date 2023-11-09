@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs</title>
+  <link rel="stylesheet" href="./dist/output.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <main class="bg-fondo w-[full] h-[100vh] flex justify-center">
+    <section class="flex flex-col gap-[1rem]" id="container">
+      <aside class="w-[30rem] h-[8rem]">
+        <ul class="flex gap-[1rem] justify-center items-center w-[100%] h-[100%]">
+          <li class="border-white border-[.2rem] rounded-[.5rem] hover:scale-[1.1] transition-all duration-300 ease-in-out">
+            <a href="#">
+              <img data-id="arima" class="object-cover block w-[5rem] h-[5rem] rounded-[.5rem]"
+              src="https://i.pinimg.com/736x/b4/db/f9/b4dbf931ada0e52f7fc61b01837d9ea5.jpg" 
+              alt="Arima Kana">
+            </a>
+          </li>
+
+          <li class="border-white border-[.2rem] rounded-[.5rem] hover:scale-[1.1] transition-all duration-300 ease-in-out">
+            <a href="#">
+              <img data-id="rias" class="object-cover block w-[5rem] h-[5rem] rounded-[.5rem]"
+              src="https://images-eds-ssl.xboxlive.com/image?url=wHwbXKif8cus8csoZ03RWwcxuUQ9WVT6xh5XaeeZD02wEfGZeuD.XMoGFVYkwHDq.Z3_1CYrgeI4fuaxIaiItrQv4KksX2IvvqwLmDmue2CoG_jM.WXITerrQpKqd.GTa4y2xso.gpqpK8Tvu_xKd4jLJgx7gN.5r48LdMrf3V30sn1QSuv.EP3YzJotAIlQU5AMSlAdD0hpQA60E1Aq4l.RCdqvhiSU42FD9yWsXS.Y3KTGK7CmKwcEFtfxFe5fxPJdwx9ij45.B6xcwNye3AqTSAmpQaApzoqXLSkO2Uo-&format=png" 
+              alt="Rias Gremory">
+            </a>
+          </li>
+
+          <li class="border-white border-[.2rem] rounded-[.5rem] hover:scale-[1.1] transition-all duration-300 ease-in-out">
+            <a href="#">
+              <img data-id="rem" class="object-cover block w-[5rem] h-[5rem] rounded-[.5rem]"
+              src="https://www.geekmi.news/__export/1663531419152/sites/debate/img/2022/09/18/rem.jpg_423682103.jpg" 
+              alt="Rem">
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <div class="flex flex-col items-center">
+        <article id="arima" class="articles flex items-center gap-[1rem] flex-col bg-white w-[25rem] rounded-[.5rem] px-[1.2rem] py-[.8rem]">
+          <header class="flex justify-between w-[100%]">
+            <figure class="flex items-center gap-[.8rem]">
+              <img class="w-[3rem] rounded-[50%]"
+              src="https://i.pinimg.com/736x/b4/db/f9/b4dbf931ada0e52f7fc61b01837d9ea5.jpg" 
+              alt="Arima">
+              <figcaption><b>arima_kana</b></figcaption>
+            </figure>
+
+            <button>
+              <i class='bx bx-dots-vertical-rounded bx-md'></i>
+            </button>
+          </header>
+
+          <img 
+          class="w-[100%] h-[18rem] object-cover"
+          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/91c4b308-0ef5-4c96-be0a-d2ed0f831f9e/dfwkvuj-a6f70a91-2813-4af8-9ef8-9aa154803dfa.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzkxYzRiMzA4LTBlZjUtNGM5Ni1iZTBhLWQyZWQwZjgzMWY5ZVwvZGZ3a3Z1ai1hNmY3MGE5MS0yODEzLTRhZjgtOWVmOC05YWExNTQ4MDNkZmEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ucM_ou8qkJ3bpm_rVd0pnVQQW7UrWpvU_auuvfMjrc8" alt="Arima">
+
+          <footer class="w-[100%] flex items-center justify-between"> 
+            <ul class="flex gap-[1rem]">
+              <li>
+                <a href="#">
+                  <i class='bx bx-heart bx-md'></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class='bx bx-message-rounded-dots bx-md'></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class='bx bx-send bx-md'></i>
+                </a>
+              </li>
+            </ul>
+
+            <a href="#">
+              <i class='bx bx-bookmark bx-md'></i>
+            </a>
+          </footer>
+        </article>
+
+        <article id="rias" class="articles hidden items-center gap-[1rem] flex-col bg-white w-[25rem] rounded-[.5rem] px-[1.2rem] py-[.8rem]">
+          <header class="flex justify-between w-[100%]">
+            <figure class="flex items-center gap-[.8rem]">
+              <img class="w-[3rem] rounded-[50%]"
+              src="https://images-eds-ssl.xboxlive.com/image?url=wHwbXKif8cus8csoZ03RWwcxuUQ9WVT6xh5XaeeZD02wEfGZeuD.XMoGFVYkwHDq.Z3_1CYrgeI4fuaxIaiItrQv4KksX2IvvqwLmDmue2CoG_jM.WXITerrQpKqd.GTa4y2xso.gpqpK8Tvu_xKd4jLJgx7gN.5r48LdMrf3V30sn1QSuv.EP3YzJotAIlQU5AMSlAdD0hpQA60E1Aq4l.RCdqvhiSU42FD9yWsXS.Y3KTGK7CmKwcEFtfxFe5fxPJdwx9ij45.B6xcwNye3AqTSAmpQaApzoqXLSkO2Uo-&format=png" 
+              alt="Arima">
+              <figcaption><b>Rias_gremory15</b></figcaption>
+            </figure>
+
+            <button>
+              <i class='bx bx-dots-vertical-rounded bx-md'></i>
+            </button>
+          </header>
+
+          <img 
+          class="w-[100%] h-[18rem] object-cover"
+          src="https://images8.alphacoders.com/916/916896.jpg" alt="Rias">
+
+          <footer class="w-[100%] flex items-center justify-between"> 
+            <ul class="flex gap-[1rem]">
+              <li>
+                <a href="#">
+                  <i class='bx bx-heart bx-md'></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class='bx bx-message-rounded-dots bx-md'></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class='bx bx-send bx-md'></i>
+                </a>
+              </li>
+            </ul>
+
+            <a href="#">
+              <i class='bx bx-bookmark bx-md'></i>
+            </a>
+          </footer>
+        </article>
+        
+        <article id="rem" class="articles hidden items-center gap-[1rem] flex-col bg-white w-[25rem] rounded-[.5rem] px-[1.2rem] py-[.8rem]">
+          <header class="flex justify-between w-[100%]">
+            <figure class="flex items-center gap-[.8rem]">
+              <img class="w-[3rem] rounded-[50%]"
+              src="https://www.geekmi.news/__export/1663531419152/sites/debate/img/2022/09/18/rem.jpg_423682103.jpg" 
+              alt="Rem">
+              <figcaption><b>Rem12</b></figcaption>
+            </figure>
+
+            <button>
+              <i class='bx bx-dots-vertical-rounded bx-md'></i>
+            </button>
+          </header>
+
+          <img 
+          class="w-[100%] h-[18rem] object-cover"
+          src="https://www.anmosugoi.com/wp-content/uploads/2022/09/rem-re-zero.webp" alt="Rias">
+
+          <footer class="w-[100%] flex items-center justify-between"> 
+            <ul class="flex gap-[1rem]">
+              <li>
+                <a href="#">
+                  <i class='bx bx-heart bx-md'></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class='bx bx-message-rounded-dots bx-md'></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class='bx bx-send bx-md'></i>
+                </a>
+              </li>
+            </ul>
+
+            <a href="#">
+              <i class='bx bx-bookmark bx-md'></i>
+            </a>
+          </footer>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="./js/app.js"></script>
+</body>
+</html>

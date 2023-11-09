@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider | video</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section>
+        <video id="slider" autoplay loop>
+            <source src="./assets/video1.mp4" type="video/mp4">
+        </video>
+
+        <ul class="navegation">
+            <li onclick="videourl('./assets/video1.mp4')">
+                <img src="https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/08/13/one-piece-gear-5.jpeg" alt="luffy">
+            </li>
+            <li onclick="videourl('./assets/video2.mp4')">
+                <img src="https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2023/03/One-Piece-presenta-Key-visual-por-el-climax-en-el-Arco-de-Wano.jpg" alt="luffy">
+            </li>
+            <li onclick="videourl('./assets/video3.mp4')">
+                <img src="https://64.media.tumblr.com/93bddfccc5d2e27747e9693849aa31e8/bd44a82434f5276c-20/s1280x1920/45b2d1a827372640931f022b66af7779df5ebc3c.png" alt="zoro">
+            </li>
+            <li onclick="videourl('./assets/video4.mp4')">
+                <img src="https://www.mundodeportivo.com/alfabeta/hero/2023/05/sanji-one-piece-anime-wano-1.jpg?width=768&aspect_ratio=16:9&format=nowebp" alt="sanji">
+            </li>
+        </ul>
+    </section>
+    <script>
+        function videourl(video) {
+            let $slider = document.getElementById("slider");
+            $slider.src = video;
+        }
+    </script>
+</body>
+</html>

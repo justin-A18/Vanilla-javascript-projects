@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+html{
+  font-size: 62.4%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  background: 
+  linear-gradient(42deg, rgba(239,77,95,1) 5%, rgba(237,128,92,1) 80%); 
+}
+
+.card{
+  width: 45rem;
+  min-height: 30rem;
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3rem;
+}
+
+.card__logo{
+  width: 10rem;
+}
+
+.card__title{
+  font-size: 2rem;
+  color: #363636;
+  margin: .5rem;
+}
+
+.card__info{
+  font-size: 1.7rem;
+  color: #636363;
+}
+
+.card__form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form__content{
+  position: relative;
+  display: flex;
+  gap: 2rem;
+}
+
+.form__input{
+  width: 24rem;
+  height: 3rem;
+  border: none;
+  background-color: #e1e1e1;
+  border-radius: 2rem;
+  padding: 2rem;
+  outline: none;
+  padding-left: 4rem;
+  font-size: 1.5rem;
+}
+
+.bx{
+  position: absolute;
+  left: 1rem;
+  top: .8rem;
+  color: #666666;
+}
+
+.form__btn{
+  color: white;
+  width: 12rem;
+  height: 4rem;
+  border: none;
+  background: 
+  linear-gradient(42deg, rgba(239,77,95,1) 5%, rgba(237,128,92,1) 80%); 
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.invisible{
+  opacity: .6;
+}
+
+/*LOADER*/
+
+
+.loader {
+  width: 48px;
+  height: 48px;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  display: none;
+  position: relative;
+  border: 3px solid;
+  border-color:#EF585E #0000 #EF585E #0000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: 1s rotate linear infinite;
+}
+.loader:before , .loader:after{
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: 10px solid transparent;
+  border-bottom-color:#EF585E;
+  transform: translate(-10px, 19px) rotate(-35deg);
+}
+.loader:after {
+  border-color: #EF585E #0000 #0000 #0000 ;
+  transform: translate(32px, 3px) rotate(-35deg);
+}
+ @keyframes rotate {
+  100%{    transform: rotate(360deg)}
+}
+
+.visible{
+  display: inline-block;
+}
+
+@media screen and (max-width: 700px) {
+  .card{
+    width: 40rem;
+  }
+
+  .form__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.enviado{
+  color: white;
+  font-size: 2rem;
+  padding: 2rem;
+  width: 100%;
+  display: none;
+  border-radius: 2rem;
+  background-color: rgb(56, 109, 255);
+  margin-bottom: 0;
+}
+
+.enviado-v{
+  display: block;
+}

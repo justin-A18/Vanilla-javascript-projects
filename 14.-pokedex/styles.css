@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+:root {
+  --normal: #a5a575;
+  --fire: #ee7e2f;
+  --water: #638ced;
+  --electric: #f8ce2f;
+  --ice: #77a6a6;
+  --fight: #ba241b;
+  --poison: #9d379d;
+  --ground: #dfc069;
+  --flyin: #a890f2;
+  --psychic: #f65988;
+  --bug: #a6b51e;
+  --rock: #b79f39;
+  --ghost: #705898;
+  --dark: #705849;
+  --dragon: #7d4cf6;
+  --steel: #b8b8d0;
+  --fairy: #e7afb5;
+  --shadow: #867070;
+  --grass: #ffd966;
+  --unknown: #804674;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+li {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+	padding: 0;
+  background-color: #ececec;
+
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.content-poke {
+  width: 100%;
+  height: 100%;
+}
+
+.poke-header {
+  width: 100%;
+  min-height: 8rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(112, 112, 112, 0.37);
+}
+
+.header__img {
+  width: 15rem;
+  margin-bottom: 2rem;
+}
+
+.header__categories {
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.categories__links {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.categories__links:hover {
+  scale: 1.1;
+}
+
+.links {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+.normal {
+  background-color: var(--normal);
+}
+.fighting {
+  background-color: var(--fight);
+}
+.flying {
+  background-color: var(--flyin);
+}
+.poison {
+  background-color: var(--poison);
+}
+.ground {
+  background-color: var(--ground);
+}
+.rock {
+  background-color: var(--rock);
+}
+.bug {
+  background-color: var(--bug);
+}
+.ghost {
+  background-color: var(--ghost);
+}
+.steel {
+  background-color: var(--steel);
+}
+.fire {
+  background-color: var(--fire);
+}
+.water {
+  background-color: var(--water);
+}
+.electric {
+  background-color: var(--electric);
+}
+.psychic {
+  background-color: var(--psychic);
+}
+.ice {
+  background-color: var(--ice);
+}
+.dragon {
+  background-color: var(--dragon);
+}
+.dark {
+  background-color: var(--dark);
+}
+.fairy {
+  background-color: var(--fairy);
+}
+.grass {
+  background-color: var(--grass);
+}
+.unknown {
+  background-color: var(--unknown);
+}
+.shadow {
+  background-color: var(--shadow);
+}
+
+.poke-cards{
+	width: 100%;
+	padding: 1em;
+	display: grid;
+	gap: 3rem;
+	place-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-rows: auto;
+}
+
+.card{
+	background-color: white;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: all .5s ease-in-out;
+	cursor: pointer;
+}
+
+.card:hover{
+	scale: 1.1;
+}
+
+.card__img{
+	width: 12rem;
+	position: relative;
+	z-index: 999;
+}
+
+.img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 99;
+}
+
+.card__name{
+	font-size: 2rem;
+	font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  text-align: center;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.card__type{
+	display: flex;
+	gap: 2rem;
+}
+
+.type__btn{
+	padding: 1rem;
+	border-radius: 1rem;
+	font-size: 1.5rem;
+	font-family: "Rubik", sans-serif;
+  font-weight: 700;
+	color: white;
+	text-transform: uppercase;
+}
+
+.card__id{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 8rem;
+	margin: 0;
+	z-index: -1;
+	color: rgba(128, 128, 128, 0.226);
+	font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+.card__tamanio{
+	font-size: 1.5rem;
+	font-family: "Rubik", sans-serif;
+  font-weight: 400;
+	display: flex;
+	gap: 2rem;
+}
+
+.card.hidden{
+	display: none;
+}

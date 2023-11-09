@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sent-Email</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <article class="card">
+    <div class="card__logo">
+      <img class="logo" src="./logo.svg" alt="logo">
+    </div>
+    <h1 class="card__title">SUBSCRIBE</h1>
+    <p class="card__info">Suscribe to our newsletter & stay updated</p>
+
+    <span class="loader"></span>
+
+    <form class="card__form" id="form">
+      <div class="form__content">
+        <input id="input" class="form__input" name="email" type="email" placeholder="Your Email">
+        <i class='bx bx-envelope bx-md'></i>
+        <button class="form__btn" type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+
+    <p class="enviado">Se ha suscrito correctamente</p>
+  </article>
+  <script src="./app.js"></script>
+</body>
+
+</html>

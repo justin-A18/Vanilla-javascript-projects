@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de tareas</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <main class="container">
+    <article class="todo">
+      <header class="todo__date">
+        <div class="date__dateright">
+          <p class="dateright__dateNumber" id="dateNumber"></p>
+          <div class="date__number">
+            <p class="number__datemonth" id="dateMonth"></p>
+            <p class="number__dateyear" id="dateYear"></p>
+          </div>
+        </div>
+        <p class="date__day" id="dateDay"></p>
+      </header>
+      <form class="todo__form" id="todo">
+        <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="form__input">
+        <button type="submit" class="form__addTaskButton">+</button>
+        <button type="button" class="form__orderButton" id="order">Ordenar</button>
+      </form>
+      <ul class="todo__list" id="tasksContainer"></ul>
+    </article>
+  </main>
+  <script src="./app.js"></script>
+</body>
+
+</html>

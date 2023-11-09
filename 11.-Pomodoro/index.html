@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>25:00 - Time to Focus!</title>
+    <link rel="shortcut icon" href="./assets/check.svg" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <h2 class="header__icon"><i class="bx bxs-check-circle"></i>Pomofocus</h2>
+      <button class="header__registro"><i class="bx bxs-user-circle bx-md"></i> Login</button>
+    </header>
+    <main class="container">
+      <section class="card">
+        <article class="card__focus">
+          <header class="focus__nav">
+            <ul class="nav__list">
+              <li class="nav__items">
+                <a class="nav__links active" href="#">Pomodoro</a>
+              </li>
+
+              <li class="nav__items">
+                <a class="nav__links" href="#">Short Break</a>
+              </li>
+
+              <li class="nav__items">
+                <a class="nav__links" href="#">Long Break</a>
+              </li>
+            </ul>
+          </header>
+          <p class="focus__time" id="time">25:00</p>
+          <audio id="song">
+            <source src="./assets/song.mp3">
+          </audio>
+          <button class="focus__start" id="start">INICIAR</button>
+        </article>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

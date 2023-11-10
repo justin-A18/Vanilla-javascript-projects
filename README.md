@@ -2,24 +2,24 @@
 
 |  #  | Projectos                                                                                                                     | Live Demo                                                                         |
 | :-: | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| 01  | [Btns Sound](https://github.com/justin-A18/Proyectos-reto/tree/main/1.-btns-sound) | [Live Demo]() |
-| 02  | [Calculadora](https://github.com/justin-A18/Proyectos-reto/tree/main/2.-calculadora) | [Live Demo]() |
-| 03  | [Calculate Travel](https://github.com/justin-A18/Proyectos-reto/tree/main/3.-calculate-travel) | [Live Demo]() |
-| 04  | [Comentarios](https://github.com/justin-A18/Proyectos-reto/tree/main/4.-comentarios) | [Live Demo]() |
-| 05  | [Count](https://github.com/justin-A18/Proyectos-reto/tree/main/5.-count) | [Live Demo]() |
-| 06  | [Generador Contraseñas](https://github.com/justin-A18/Proyectos-reto/tree/main/6.-Generate) | [Live Demo]() |
-| 07  | [GiftBlitz](https://github.com/justin-A18/Proyectos-reto/tree/main/7.-GifBlitz) | [Live Demo]() |
-| 08  | [Input Animado](https://github.com/justin-A18/Proyectos-reto/tree/main/8.-Input-animado) | [Live Demo]() |
-| 09  | [Pasos Progreso](https://github.com/justin-A18/Proyectos-reto/tree/main/9.-pasos-progreso) | [Live Demo]() |
-| 10  | [Todo List](https://github.com/justin-A18/Proyectos-reto/tree/main/10.-Todo-list) | [Live Demo]() |
-| 11  | [Pomodoro](https://github.com/justin-A18/Proyectos-reto/tree/main/11.-Pomodoro) | [Live Demo]() |
-| 12  | [Slider Video](https://github.com/justin-A18/Proyectos-reto/tree/main/12.-Slider-video) | [Live Demo]() |
-| 13  | [Tabs](https://github.com/justin-A18/Proyectos-reto/tree/main/13.-tabs) | [Live Demo]() |
-| 14  | [Pokedex](https://github.com/justin-A18/Proyectos-reto/tree/main/14.-pokedex) | [Live Demo]() |
-| 15  | [Send Email](https://github.com/justin-A18/Proyectos-reto/tree/main/15.-send-email) | [Live Demo]() |
-| 16  | [Filter Cars](https://github.com/justin-A18/Proyectos-reto/tree/main/16.buscador_autos) | [Live Demo]() |
-| 17  | [Tweets](https://github.com/justin-A18/Proyectos-reto/tree/main/14.-pokedex) | [Live Demo]() |
-| 18  | [Carrito Compras](https://github.com/justin-A18/Proyectos-reto/tree/main/18.-carrito-compras) | [Live Demo]() |
+| 01  | [Btns Sound](https://github.com/justin-A18/Proyectos-reto/tree/main/btns-sound) | [Live Demo]() |
+| 02  | [Calculadora](https://github.com/justin-A18/Proyectos-reto/tree/main/calculadora) | [Live Demo]() |
+| 03  | [Calculate Travel](https://github.com/justin-A18/Proyectos-reto/tree/main/calculate-travel) | [Live Demo]() |
+| 04  | [Comentarios](https://github.com/justin-A18/Proyectos-reto/tree/main/comentarios) | [Live Demo]() |
+| 05  | [Count](https://github.com/justin-A18/Proyectos-reto/tree/main/count) | [Live Demo]() |
+| 06  | [Generador Contraseñas](https://github.com/justin-A18/Proyectos-reto/tree/main/generate) | [Live Demo]() |
+| 07  | [GiftBlitz](https://github.com/justin-A18/Proyectos-reto/tree/main/gifBlitz) | [Live Demo]() |
+| 08  | [Input Animado](https://github.com/justin-A18/Proyectos-reto/tree/main/input-animado) | [Live Demo]() |
+| 09  | [Pasos Progreso](https://github.com/justin-A18/Proyectos-reto/tree/main/pasos-progreso) | [Live Demo]() |
+| 10  | [Todo List](https://github.com/justin-A18/Proyectos-reto/tree/main/todo-list) | [Live Demo]() |
+| 11  | [Pomodoro](https://github.com/justin-A18/Proyectos-reto/tree/main/pomodoro) | [Live Demo]() |
+| 12  | [Slider Video](https://github.com/justin-A18/Proyectos-reto/tree/main/slider-video) | [Live Demo]() |
+| 13  | [Tabs](https://github.com/justin-A18/Proyectos-reto/tree/main/tabs) | [Live Demo]() |
+| 14  | [Pokedex](https://github.com/justin-A18/Proyectos-reto/tree/main/pokedex) | [Live Demo]() |
+| 15  | [Send Email](https://github.com/justin-A18/Proyectos-reto/tree/main/send-email) | [Live Demo]() |
+| 16  | [Filter Cars](https://github.com/justin-A18/Proyectos-reto/tree/main/buscador-autos) | [Live Demo]() |
+| 17  | [Tweets](https://github.com/justin-A18/Proyectos-reto/tree/main/tweets) | [Live Demo]() |
+| 18  | [Carrito Compras](https://github.com/justin-A18/Proyectos-reto/tree/main/carrito-compras) | [Live Demo]() |
 
 
 

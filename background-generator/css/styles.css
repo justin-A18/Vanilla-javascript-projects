@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik:wght@500&display=swap');
+
+:root{
+    --color-principal:#F1F8FD;
+    --font-body:'Rubik', sans-serif;
+    --font-header:'Roboto', sans-serif;
+}
+
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--color-principal);
+    font-family: var(--font-body);
+    margin: 0;
+}
+
+.header__class{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    background-color: var(--color-principal);
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+}
+
+.class__flipper{
+    width: 50%;
+    text-align: center;
+    border-right:thin solid black;
+}
+
+.flipper-link{
+    text-decoration: none;
+    color: #0681bf;
+}
+
+.class__hex{
+    width: 50%;
+    text-align: center;
+}
+
+.hex-link{
+    text-decoration: none;
+    color: black;
+}
+
+.container__box{
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+    margin-top: 20rem;
+    width: 38rem;
+    height: 15rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7rem 1fr;
+}
+
+.box__resultado{
+    background-color: #1B1B1B;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    color: white;
+    letter-spacing: .4rem;
+    border-radius: 1rem;
+}
+
+.resultado-span{
+    color: #54AFDD;
+    letter-spacing: .2rem;
+}
+
+.resultado-paragraph{
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.resultado-copy{
+    width: 3rem;
+    position: absolute;
+    right: -5rem;
+    top: -4px;
+    fill: white;
+    cursor: pointer;
+}
+
+.resultado-copy:hover{
+    fill: #54AFDD;
+}
+
+.box__generate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.generate-btn{
+    background-color: var(--color-principal);
+    border: medium solid black;
+    font-size: 2rem;
+    width: 15rem;
+    height: 5rem;
+    color: black;
+    font-family: var(--font-body); 
+    letter-spacing: .3rem;
+    border-radius: 1rem;
+    transition: background-color 300ms linear;
+}
+
+.generate-btn:hover{
+    cursor: pointer;
+    background-color: #1B1B1B;
+    color: var(--color-principal);
+}

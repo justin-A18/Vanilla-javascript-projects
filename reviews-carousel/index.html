@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Reviews</title>
+</head>
+<body>
+    <main class="container__perfile">
+        <section class="perfile__reviews">
+            <h1 class="reviews__title">
+                Our Reviews
+            </h1>
+
+            <div class="reviews__decoration"></div>
+        </section>
+
+        <article class="perfile__card">
+            <figure class="card__image">
+                <img class="image__foto" id="person-img" src="./assets/andrea.jpg" alt="andrea">
+
+                <svg class="image__comillas" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="m21.95 8.721-.025-.168-.026.006A4.5 4.5 0 1 0 17.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222-.474.197.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.028 7.028 0 0 0-.063-.539zm-11 0-.025-.168-.026.006A4.5 4.5 0 1 0 6.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222c-.301.123-.473.195-.473.195l.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.571 7.571 0 0 0-.064-.537z"></path>
+                </svg>
+            </figure>
+            
+            <h2 id="author" class="card__datos-personales">
+                Andrea Jones
+            </h2>
+
+            <p id="job" class="card__cargo">web developer</p>
+
+            <p id="info" class="card__description">
+                I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse
+                before they sold out chambray pop-up. Shaman humblebrag pickled
+                coloring book salvia hoodie, cold-pressed four dollar toast everyday carry.
+            </p>
+
+            <div class="card__buttons">
+                <button class="btn button__left" id="prev-btn-left">
+                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+                    </svg>
+                </button>
+
+                <button class="btn button__right" id="next">
+                    <svg class="arrow"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <button class="card__button-suprise" id="btn-random">
+                suprise me
+            </button>
+        </article>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+</html>

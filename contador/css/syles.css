@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+:root{
+    --color-btn:black;
+    --color-fondo:#F1F8FD;
+    --color-letras:#12232F;
+    --font-primary:'Rubik', sans-serif;
+}
+
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    background-color: var(--color-fondo);
+    font-family: var(--font-primary);
+}
+
+.principal__container{
+    width: 38rem;
+    height: 25rem;
+    display: grid;
+    place-content: center;
+    margin: 20rem auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.container__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    color: var(--color-letras);
+}
+
+.title__primary{
+    margin: .5rem;
+}
+
+.container__result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7rem;
+    color: var(--color-letras);
+}
+
+.result__print{
+    margin: 0.5rem;
+}
+
+.container__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-grow: 1;
+
+}
+
+.btn{
+    flex-basis: 10rem;
+    height: 4rem;
+    background-color: var(--color-fondo);
+    border: medium solid var(--color-btn);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    border-radius: .5rem;
+    transition: background-color 300ms linear;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: var(--color-fondo);
+    background-color: var(--color-btn);
+}

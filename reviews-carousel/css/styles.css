@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+:root{
+    --color-fondo:#F1F8FD;
+    --color-letras:#12232F;
+    --font-primary:'Rubik', sans-serif;
+    --color-paragraph:rgb(117, 117, 117);
+}
+
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--color-fondo);
+    font-family: var(--font-primary);
+    margin: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.container__perfile{
+    width: 50%;
+    height: 60rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15rem 50rem;
+    place-content: center;
+}
+
+.perfile__reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews__title{
+    font-size: 4rem;
+    color: var(--color-letras);
+    margin: 0;
+}
+
+.reviews__decoration{
+    display: block;
+    width: 6rem;
+    height: 3px;
+    background-color: #5cb0ec;
+}
+
+.perfile__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 4rem;
+    box-shadow: 0 0 10px 0 rgb(174, 174, 174);
+}
+
+.card__image{
+    margin: 0;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image__foto{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+.card__image::before{
+    content: " ";
+    display: block;
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    background-color: #5cb0ec;
+    border-radius: 50%;
+    right: 1.8rem;
+}
+
+.image__comillas{
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    background-color: #5cb0ec;
+    border-radius: 50%;
+    padding: .6rem;
+    fill: white;
+    width: 4rem;
+    height: 4rem;
+}
+
+.card__datos-personales{
+    font-size: 1.8rem;
+    letter-spacing: .5rem;
+    margin: 0;
+    margin-bottom: .5rem;
+    margin-top: 1.5rem;
+}
+
+.card__cargo{
+    color: #5cb0ec;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.card__description{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--color-paragraph);
+}
+
+.card__buttons{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: thin solid transparent;
+    transition: background-color 300ms;
+    border-radius: 50%;
+}
+
+.arrow{
+    fill: #5cb0ec;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #12232F;
+}
+
+.card__button-suprise{
+    background-color: white;
+    color: #5cb0ec;
+    border: thin solid #5cb0ec;
+    width: 13rem;
+    border-radius: 1rem;
+    transition: background-color 300ms;
+}
+
+.card__button-suprise:hover{
+    color: white;
+    cursor: pointer;
+    background-color: #5cb0ec;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

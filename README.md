@@ -22,9 +22,8 @@
 | 18  | [Carrito Compras](https://github.com/justin-A18/Proyectos-reto/tree/main/carrito-compras) | [Live Demo](https://justin-a18.github.io/Proyectos-reto/carrito-compras/) |
 | 19  | [Background Generator](https://github.com/justin-A18/Proyectos-reto/tree/main/background-generator) | [Live Demo](https://justin-a18.github.io/Proyectos-reto/background-generator/) |
 | 20  | [Contador Btn](https://github.com/justin-A18/Proyectos-reto/tree/main/contador) | [Live Demo](https://justin-a18.github.io/Proyectos-reto/contador/) |
-| 21  | [Carrito Compras](https://github.com/justin-A18/Proyectos-reto/tree/main/carrito-compras) | [Live Demo](https://justin-a18.github.io/Proyectos-reto/carrito-compras/) |
-| 22  | [CriptoMonedas](https://github.com/justin-A18/Proyectos-reto/tree/main/criptoMonedas) | [Live Demo](https://justin-a18.github.io/Proyectos-reto/criptoMonedas/) |
-| 23  | [Reviews Carousel](https://github.com/justin-A18/Proyectos-reto/tree/main/reviews-carousel) | [Live Demo](https://justin-a18.github.io/Proyectos-reto/reviews-carousel/) |
+| 21  | [CriptoMonedas](https://github.com/justin-A18/Proyectos-reto/tree/main/criptoMonedas) | [Live Demo](https://justin-a18.github.io/Proyectos-reto/criptoMonedas/) |
+| 22  | [Reviews Carousel](https://github.com/justin-A18/Proyectos-reto/tree/main/reviews-carousel) | [Live Demo](https://justin-a18.github.io/Proyectos-reto/reviews-carousel/) |
 
 
 
